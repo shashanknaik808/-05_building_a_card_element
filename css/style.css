@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 700;
+    font-family: "Libre Baskerville", serif;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width:480px) {
+
+    .entry {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .entry {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+.entry .content {
+    background-color: white;
+}
