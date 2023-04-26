@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     background-color: #f2f2f2;
 }
 
@@ -34,13 +35,45 @@ h3 {
     font-family: "Libre Baskerville", serif;
 }
 
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.entry .content {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.content span {
+    color: #db008d;
+}
+
+.button {
+    background-color: #008fd1;
+    color: white;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 @media (min-width:480px) {
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .entry {
         flex: 0 0 calc(50% - 1rem);
@@ -51,8 +84,4 @@ h3 {
     .entry {
         flex: 0 0 calc(33.3% - 1rem);
     }
-}
-
-.entry .content {
-    background-color: white;
 }
